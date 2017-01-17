@@ -1,5 +1,5 @@
 package com.example.chapter2;
-// Service provider framework sketch
+// IService provider framework sketch
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -23,7 +23,7 @@ public class Services {
         providers.put(name, p);
     }
 
-    // Service access API
+    // IService access API
     public static Service newInstance() {
         return newInstance(DEFAULT_PROVIDER_NAME);
     }
