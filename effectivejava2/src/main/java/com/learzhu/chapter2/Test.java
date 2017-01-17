@@ -37,6 +37,7 @@ public class Test {
     public static IProvider COMP_PROVIDER = new IProvider() {
         @Override
         public IService newService() {
+            //匿名内部类直接返回对象
             return new IService() {
                 @Override
                 public String toString() {
